@@ -7,6 +7,9 @@
 body{
     font-family: 'Oswald', sans-serif;
     background-image: url(img/fondo2.jpg);
+    background-position: center;
+    
+    background-size: cover;
 }
 
 .container{
@@ -27,16 +30,19 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 15px;
- 
+    letter-spacing: 1.5px;
+    z-index: 10px;
+    position: relative;
     
+
 }
 .nav-menu{
     display: flex;
     padding: 40px;
+    position: relative;
 }
 
 .navigation{
-    position: fixed;
     width: 90%;
 }
 
@@ -54,6 +60,9 @@ body{
     list-style: none;
     margin: 10px;
 }
+
+
+/*HOVER MENU*/
 
 .nav-main li a {
     color: rgb(252, 247, 247);
@@ -74,6 +83,87 @@ body{
 
 .primer-banner{
     width: 100%;
-    height: 300px;
+    height: 370px;
     background: url(img/pet-shop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px #000;
+}
+
+#titulo-banner{
+    font-family: 'Festive', cursive;
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background: #686767;
+    font-size: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: cornsilk;
+    margin-top: 60px;
+    box-shadow: 0.4em 5px 5px #000;
+}
+
+
+.btn:hover{
+    padding: 15px 30px;
+    background: rgb(131, 128, 128);
+    color: #fff;
+    border-radius: 15px;
+    transition: 0.5s ;
+}
+
+#description-banner {
+    font-size: 17px;
+    color: rgb(7, 7, 7);
+}
+
+
+/*DEVELOPERS INFARMATION*/
+
+.primeros2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rubenPadre{
+    margin-left: 300px;
+    margin-top: 110px;
+}
+.main{
+    color: white;
+    margin: 0 auto;
+    margin-left: 300px;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+span{
+    color: aqua;
+}
+.foto-developer{
+    height: 250px;
+    border-radius: 10px;
+    border: 7px solid rgb(77, 243, 243);
+    box-shadow: 0 15px 15px  #000;
 }
